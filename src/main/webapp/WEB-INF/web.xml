@@ -1,0 +1,50 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- AdminServlet Configuration -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>servlets.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/AdminServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- RegisterDonorServlet Configuration -->
+    <servlet>
+        <servlet-name>RegisterDonorServlet</servlet-name>
+        <servlet-class>servlets.RegisterDonorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterDonorServlet</servlet-name>
+        <url-pattern>/RegisterDonorServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- RequestBloodServlet Configuration -->
+    <servlet>
+        <servlet-name>RequestBloodServlet</servlet-name>
+        <servlet-class>servlets.RequestBloodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestBloodServlet</servlet-name>
+        <url-pattern>/RequestBloodServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AdminLoginServlet Configuration -->
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>servlets.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- JSTL Taglib Configuration (not needed in modern servlets) -->
+   
+
+</web-app>
